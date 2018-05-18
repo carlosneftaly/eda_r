@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Análisis exploratorio de datos con R</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Análisis exploratorio de datos con R">
+  <meta name="author" content="Carlos Neftaly Lozano A.">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <aside class="gdbar">
+    <img src="assets/img/db.jpg">
+  </aside>
+  <hgroup class="auto-fadein">
+    <h1>Análisis exploratorio de datos con R</h1>
+    <h2>Curso Análisis de datos experimentales con R</h2>
+    <p>Carlos Neftaly Lozano A.<br/>www.microbiostats.com</p>
+  </hgroup>
+  <article></article>  
+  <footer class = 'license'>
+    <a href='http://creativecommons.org/licenses/by-nc-sa/3.0/'>
+    <img width = '80px' src = 'http://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png'>
+    </a>
+  </footer>
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Hablemos de <strong>R</strong></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/R.png" title="plot of chunk unnamed-chunk-1" alt="plot of chunk unnamed-chunk-1" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Hablemos de <strong>R</strong></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/Rcurve.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Hablemos de <strong>R</strong></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/Ruso.gif" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Hablemos de <strong>R</strong></h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/Rscholar.png" title="plot of chunk unnamed-chunk-4" alt="plot of chunk unnamed-chunk-4" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Instalación de <strong>R</strong></h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Empezaremos por lo más básico, Podemos instalar <strong>R</strong> desde el siguiente link: <a href="https://www.r-project.org/">https://www.r-project.org/</a></p>
+
+<p>Pero como muchos somos algo despistados, estas son las maneras más sencillas para instalar <strong>R</strong> en distintos Sistemas Operativos:</p>
+
+<table><thead>
+<tr>
+<th>Sistema Operativo</th>
+<th>Método</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Windows</td>
+<td><a href="https://cran.r-project.org/bin/windows/base/old/3.4.2/R-3.4.2-win.exe">https://cran.r-project.org/bin/windows/base/old/3.4.2/R-3.4.2-win.exe</a></td>
+</tr>
+<tr>
+<td>Debian y derivados</td>
+<td><code>sudo apt-get install r-base</code></td>
+</tr>
+<tr>
+<td>Redhat y derivados</td>
+<td><code>sudo yum install R-core R-devel</code></td>
+</tr>
+<tr>
+<td>Mac</td>
+<td><a href="https://www.youtube.com/watch?v=ICGkG7Gg6j0">https://www.youtube.com/watch?v=ICGkG7Gg6j0</a></td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Entornos de desarrollo para R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Una vez instalado, un entorno de desarrollo integrado será necesario para facilitar el desarrollo de códigos en <strong>R</strong>, por lo que se presentan tres de varias opciones para trabajar con <strong>R</strong>. </p>
+
+<table><thead>
+<tr>
+<th align="center">IDE</th>
+<th>Link</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="center">Tinn-R</td>
+<td><a href="https://sourceforge.net/projects/tinn-r/">https://sourceforge.net/projects/tinn-r/</a></td>
+</tr>
+<tr>
+<td align="center">R-Studio [Recomendado]</td>
+<td><a href="https://www.rstudio.com/">https://www.rstudio.com/</a></td>
+</tr>
+<tr>
+<td align="center">R commander (Rcmdr)</td>
+<td><a href="http://www.rcommander.com/">http://www.rcommander.com/</a></td>
+</tr>
+</tbody></table>
+
+<p><img src="https://rstudio.com/wp-content/uploads/2015/10/rstudio-300x260.png" alt="RIDE"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-7" style="background:;">
+  <hgroup>
+    <h2>Rstudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/Rstudio.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="900px" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <hgroup>
+    <h2>Flujo de trabajo  sugerido en Rstudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/rcore.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-9" style="background:;">
+  <hgroup>
+    <h2>Flujo de trabajo  sugerido en Rstudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/rf1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="900px" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <hgroup>
+    <h2>Flujo de trabajo  sugerido en Rstudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/rf2.png" title="plot of chunk unnamed-chunk-8" alt="plot of chunk unnamed-chunk-8" width="900px" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-11" style="background:;">
+  <hgroup>
+    <h2>Flujo de trabajo  sugerido en Rstudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/rf3.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="900px" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <hgroup>
+    <h2>Flujo de trabajo  sugerido en Rstudio</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/ef4.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="400px" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-13" style="background:;">
+  <hgroup>
+    <h2>Empezemos.......</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="https://media.giphy.com/media/3oz8xOJiQ9VtnOKAIU/giphy.gif" title="plot of chunk unnamed-chunk-11" alt="plot of chunk unnamed-chunk-11" width="600px" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-14" style="background:;">
+  <hgroup>
+    <h2>0. Estructura de datos</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="./assets/img/dest.png" title="plot of chunk unnamed-chunk-12" alt="plot of chunk unnamed-chunk-12" width="600px" style="display: block; margin: auto;" /></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>1. Importando datos a R</h2>
+  </hgroup>
+  <article data-timings="">
+    <blockquote>
+<p><em>Tips</em>: cosas que podrían producir problemas.</p>
+</blockquote>
+
+<ul>
+<li><p>El <em>separador decimal</em> SIEMPRE SIEMPRE será un punto. </p></li>
+<li><p>Nombres de columnas: no debe comenzar con números, tienen que ser sencillos y sin espacios ni caracteres especiales.
+Como sugerencia, los nombres de columnas deben ser cortos, ya que tendrás que escribirlos muchas veces.</p></li>
+<li><p><em>R</em> diferencia entre mayúscula y minúscula. <code>Rosa no es lo mismo que rosa</code>. </p></li>
+<li><p>Si en una columna hay <em>datos faltantes</em> se debe dejar <code>espacio en blanco</code> o remplazar con <code>NA</code> (con mayúsculas).</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-16" style="background:;">
+  <hgroup>
+    <h2>1. Importando datos a R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>La forma más sencilla de importar un <code>.csv</code> es a través del comando <code>read.csv(...)</code>, cuya implementación es la siguiente:</p>
+
+<pre><code class="r">read.csv(file, header = TRUE, sep = &quot;,&quot;, dec = &quot;.&quot;, ...)
+</code></pre>
+
+<p>Dónde:</p>
+
+<table><thead>
+<tr>
+<th>Argumentos</th>
+<th>Significado o uso</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>file</code></td>
+<td>Ruta al archivo</td>
+</tr>
+<tr>
+<td><code>header</code></td>
+<td>Valor lógico para determinar si el archivo incluye encabezados en la primera linea.</td>
+</tr>
+<tr>
+<td><code>sep</code></td>
+<td>Este campo sirve para especificar el carácter de separación.</td>
+</tr>
+<tr>
+<td><code>dec</code></td>
+<td>El carácter usado para los puntos decimales</td>
+</tr>
+<tr>
+<td><code>...</code></td>
+<td>Ver la documentación para argumentos extras</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-17" style="background:;">
+  <hgroup>
+    <h2>1. Importando datos a R</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Un ejemplo sería el siguiente:</p>
+
+<pre><code class="r">datos &lt;- read.csv(&quot;dataframe1.csv&quot;,, header=T, sep=&#39;;&#39;, dec=&#39;,&#39;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-18" style="background:;">
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Hablemos de <strong>R</strong>'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Hablemos de <strong>R</strong>'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Hablemos de <strong>R</strong>'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Hablemos de <strong>R</strong>'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Instalación de <strong>R</strong>'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Entornos de desarrollo para R'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Rstudio'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title='Flujo de trabajo  sugerido en Rstudio'>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Flujo de trabajo  sugerido en Rstudio'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title='Flujo de trabajo  sugerido en Rstudio'>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Flujo de trabajo  sugerido en Rstudio'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title='Flujo de trabajo  sugerido en Rstudio'>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Empezemos.......'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='0. Estructura de datos'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='1. Importando datos a R'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='1. Importando datos a R'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='1. Importando datos a R'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='NA'>
+         18
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
