@@ -462,6 +462,9 @@ En estadística, 'los datos' se conceptualizan como un conjunto de  <span style=
 
 ## Resumiendo variables: Tablas de frecuencia
 
+
+<span style="display:block; height: 3cm;"></span>
+
 | Acidity | Conteo |
 |:-------:|:------:|
 |Low      |    23    |
@@ -500,7 +503,7 @@ $$\bar x = \frac{1}{n}\sum_{i = 1}^{n} x_i$$
 
 
 ```{r, echo=FALSE,fig.align='center'}
-      knitr::include_graphics('./figure/media.png')
+      knitr::include_graphics('./assets/img/media.png')
 ```
 
 ---
@@ -614,7 +617,7 @@ ggdotplot(df, x = "dose", y = "len",
 ## Boxplot o Cajas y bigotes
 
 ```{r, echo=FALSE,fig.align='center'}
-      knitr::include_graphics('./figure/boxplot3.png')
+      knitr::include_graphics('./assets/img/boxplot3.png')
 ```
 
 ---

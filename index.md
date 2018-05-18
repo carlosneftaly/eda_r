@@ -466,6 +466,9 @@ En estadística, 'los datos' se conceptualizan como un conjunto de  <span style=
 
 ## Resumiendo variables: Tablas de frecuencia
 
+
+<span style="display:block; height: 3cm;"></span>
+
 | Acidity | Conteo |
 |:-------:|:------:|
 |Low      |    23    |
@@ -501,7 +504,7 @@ $$\bar x = \frac{1}{n}\sum_{i = 1}^{n} x_i$$
 
 
 
-<img src="./figure/media.png" title="plot of chunk unnamed-chunk-32" alt="plot of chunk unnamed-chunk-32" style="display: block; margin: auto;" />
+<img src="./assets/img/media.png" title="plot of chunk unnamed-chunk-32" alt="plot of chunk unnamed-chunk-32" style="display: block; margin: auto;" />
 
 ---
 
@@ -565,7 +568,7 @@ Es el punto medio o central de una distribución ordenada de valores.
 
 ## Boxplot o Cajas y bigotes
 
-<img src="./figure/boxplot3.png" title="plot of chunk unnamed-chunk-39" alt="plot of chunk unnamed-chunk-39" style="display: block; margin: auto;" />
+<img src="./assets/img/boxplot3.png" title="plot of chunk unnamed-chunk-39" alt="plot of chunk unnamed-chunk-39" style="display: block; margin: auto;" />
 
 ---
 
