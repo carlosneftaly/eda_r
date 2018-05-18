@@ -431,7 +431,7 @@ En estadística, 'los datos' se conceptualizan como un conjunto de  <span style=
 
 --- 
 
-## Caso 3: Muchas más manzanas.... 
+## Caso 3: Muchas más manzanas..... 
 
 
 ```{r, echo=FALSE,fig.align='center'}

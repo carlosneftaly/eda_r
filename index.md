@@ -439,7 +439,7 @@ En estadística, 'los datos' se conceptualizan como un conjunto de  <span style=
 
 --- 
 
-## Caso 3: Muchas más manzanas.... 
+## Caso 3: Muchas más manzanas..... 
 
 
 <img src="./assets/img/6.png" title="plot of chunk unnamed-chunk-29" alt="plot of chunk unnamed-chunk-29" style="display: block; margin: auto;" />
