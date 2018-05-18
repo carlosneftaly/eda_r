@@ -1,2 +1,3 @@
-# eda_r
-Introducción a R y exploración gráfica. 
+# Introducción a R y exploración gráfica. 
+
+Curso análisis de datos experimentales con R.
